@@ -1,0 +1,6675 @@
+<!doctype html>
+
+
+
+
+  
+
+
+
+  
+
+
+<html lang="en">
+<head>
+  
+  <meta charset="utf-8" />
+
+<title>Sass Maps Plus - v0.9.5</title>
+<link rel="stylesheet" href="./assets/css/main.css" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,500,700' rel='stylesheet' type='text/css'>
+<meta name="viewport" content="width=device-width">
+<meta content="IE=edge, chrome=1" http-equiv="X-UA-Compatible">
+
+<!-- Thanks to Sass-lang.com for the icons -->
+
+<link href="http://sass-lang.com/favicon.ico" rel="shortcut icon">
+
+
+</head>
+<body>
+
+  
+  <aside class="sidebar" role="nav">
+    
+  <div class="sidebar__header">
+  <h1 class="sidebar__title">
+    
+      <a href="https://github.com/lunelson/sass-maps-plus">Sass Maps Plus - v0.9.5</a>
+    
+  </h1>
+</div>
+
+<div class="sidebar__body">
+  
+  
+    <button type="button" class="btn-toggle  js-btn-toggle" data-alt="Open all">Close all</button>
+
+    
+    
+      <p class="sidebar__item  sidebar__item--heading" data-slug="api"><a href="#api">API</a></p>
+
+      
+      
+        <div>
+
+        
+        
+          <p class="sidebar__item  sidebar__item--sub-heading" data-slug="api-function"><a href="#api-function">functions</a></p>
+
+          
+          
+            <ul class="list-unstyled">
+            <li class="sidebar__item  sassdoc__item" data-name="map-get-z" data-type="function">
+              <a href="#function-map-get-z">map-get-z
+              
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="map-merge-z" data-type="function">
+              <a href="#function-map-merge-z">map-merge-z
+              
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="map-inspect" data-type="function">
+              <a href="#function-map-inspect">map-inspect
+              
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="map-subsort" data-type="function">
+              <a href="#function-map-subsort">map-subsort
+              
+              
+              </a>
+            </li>
+            </ul>
+          
+        
+        
+      
+        
+
+        
+        
+          <p class="sidebar__item  sidebar__item--sub-heading" data-slug="api-variable"><a href="#api-variable">variables</a></p>
+
+          
+          
+            <ul class="list-unstyled">
+            <li class="sidebar__item  sassdoc__item" data-name="map-sort-dir" data-type="variable">
+              <a href="#variable-map-sort-dir">map-sort-dir
+              
+              
+              </a>
+            </li>
+            </ul>
+          
+        
+        </div>
+      
+
+    
+      <p class="sidebar__item  sidebar__item--heading" data-slug="helpers"><a href="#helpers">Helpers</a></p>
+
+      
+      
+        <div>
+
+        
+        
+          <p class="sidebar__item  sidebar__item--sub-heading" data-slug="helpers-function"><a href="#helpers-function">functions</a></p>
+
+          
+          
+            <ul class="list-unstyled">
+            <li class="sidebar__item  sassdoc__item" data-name="slice" data-type="function">
+              <a href="#function-slice">slice
+              
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="tuple-key" data-type="function">
+              <a href="#function-tuple-key">tuple-key
+              
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="tuple-value" data-type="function">
+              <a href="#function-tuple-value">tuple-value
+              
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="str-multiply" data-type="function">
+              <a href="#function-str-multiply">str-multiply
+              
+              
+              </a>
+            </li>
+            </ul>
+          
+        
+        </div>
+      
+
+    
+      <p class="sidebar__item  sidebar__item--heading" data-slug="list-map"><a href="#list-map">Old List-Maps API</a></p>
+
+      
+      
+        <div>
+
+        
+        
+          <p class="sidebar__item  sidebar__item--sub-heading" data-slug="list-map-function"><a href="#list-map-function">functions</a></p>
+
+          
+          
+            <ul class="list-unstyled">
+            <li class="sidebar__item  sassdoc__item" data-name="list-map-check" data-type="function">
+              <a href="#function-list-map-check">list-map-check
+              
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="list-map-keys" data-type="function">
+              <a href="#function-list-map-keys">list-map-keys
+              
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="list-map-values" data-type="function">
+              <a href="#function-list-map-values">list-map-values
+              
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="list-map-has-key" data-type="function">
+              <a href="#function-list-map-has-key">list-map-has-key
+              
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="list-map-get" data-type="function">
+              <a href="#function-list-map-get">list-map-get
+              
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="list-map-merge" data-type="function">
+              <a href="#function-list-map-merge">list-map-merge
+              
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="list-map-remove" data-type="function">
+              <a href="#function-list-map-remove">list-map-remove
+              
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="list-map-get-z" data-type="function">
+              <a href="#function-list-map-get-z">list-map-get-z
+              
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="list-map-merge-z" data-type="function">
+              <a href="#function-list-map-merge-z">list-map-merge-z
+              
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="list-map-prev-key" data-type="function">
+              <a href="#function-list-map-prev-key">list-map-prev-key
+              
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="list-map-next-key" data-type="function">
+              <a href="#function-list-map-next-key">list-map-next-key
+              
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="list-map-inspect" data-type="function">
+              <a href="#function-list-map-inspect">list-map-inspect
+              
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="list-map-pretty" data-type="function">
+              <a href="#function-list-map-pretty">list-map-pretty
+              
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="list-map-sort" data-type="function">
+              <a href="#function-list-map-sort">list-map-sort
+              
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="list-map-json" data-type="function">
+              <a href="#function-list-map-json">list-map-json
+              
+              
+              </a>
+            </li>
+            </ul>
+          
+        
+        
+      
+        
+
+        
+        
+          <p class="sidebar__item  sidebar__item--sub-heading" data-slug="list-map-variable"><a href="#list-map-variable">variables</a></p>
+
+          
+          
+            <ul class="list-unstyled">
+            <li class="sidebar__item  sassdoc__item" data-name="list-map-sort-dir" data-type="variable">
+              <a href="#variable-list-map-sort-dir">list-map-sort-dir
+              
+              
+              </a>
+            </li>
+            </ul>
+          
+        
+        </div>
+      
+
+    
+  
+</div>
+
+
+  </aside>
+
+  
+  <article class="main" role="main">
+
+    
+    <header class="header" role="banner">
+  <div class="container">
+  
+    <div class="header__description">
+      <p>Advanced map and list-map manipulation for all versions of Sass</p>
+
+    </div>
+  
+
+    <div class="sassdoc__searchbar  searchbar">
+       <label for="js-search-input" class="visually-hidden">Search</label>
+       <div class="searchbar__form" id="js-search">
+         <input name="search" type="search" class="searchbar__field" autocomplete="off" autofocus id="js-search-input" placeholder="Search" />
+         <ul class="searchbar__suggestions" id="js-search-suggestions"></ul>
+       </div>
+     </div>
+  </div>
+</header>
+
+
+    
+
+  
+  
+
+    
+    
+      <section class="main__section">
+        <h1 class="main__heading" id="api">
+          <div class="container">
+            API
+          </div>
+        </h1>
+
+        
+        
+
+          
+          
+            <section class="main__sub-section" id="api-function">
+              <h2 class="main__heading--secondary">
+                <div class="container">
+                  functions
+                </div>
+              </h2>
+
+              
+              
+                <section class="main__item  container  item" id="function-map-get-z">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#function-map-get-z">map-get-z</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+    
+  
+
+
+<div class="item__code-wrapper">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@function map-get-z($map, $keys...) { 
+  @each $key in $keys {
+    @if type-of($map) != &#39;map&#39; {
+      @return $map;
+    }
+
+    $map: map-get($map, $key);
+  }
+
+  @return $map;
+ }"
+    data-collapsed="@function map-get-z($map, $keys...) { ... }"><code>@function map-get-z($map, $keys...) { ... }</code></pre>
+
+  
+    <a href="https://github.com/lunelson/sass-maps-plus/blob/master/_sass-maps-plus.scss#L121-L131" class="item__source-link" target="_blank">View source</a>
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+  <div class="item__description"><p>A <em>deep</em>, nested or chained version of <code>map-get</code></p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$map</code></th>
+          <td data-label="desc"><p>Map</p>
+</td>
+          <td data-label="type">
+            <code>
+              
+                Map
+              
+            </code>
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$keys</code></th>
+          <td data-label="desc"><p>Keys to fetch</p>
+</td>
+          <td data-label="type">
+            <code>
+              
+                Arglist
+              
+            </code>
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Returns</h3>
+
+  <div class="item__description">
+  
+    Any type
+  
+  
+  </div>
+
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+
+
+  
+
+    
+      
+      <h3 class="item__sub-heading">Used by</h3>
+      <ul class="list-unstyled">
+    
+
+    <li><span class="item__cross-type">[function]</span> <a href="#function-map-merge-z"><code>map-merge-z</code></a></li>
+  
+
+
+
+  
+
+
+
+  
+
+    
+
+    <li><span class="item__cross-type">[function]</span> <a href="#function-map-subsort"><code>map-subsort</code></a></li>
+  
+
+
+
+
+</ul>
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>Lu Nelson</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+
+              
+                <section class="main__item  container  item" id="function-map-merge-z">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#function-map-merge-z">map-merge-z</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+    
+  
+
+
+<div class="item__code-wrapper">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@function map-merge-z($map, $args...) { 
+  $arg-length: length($args);
+  $key-length: $arg-length - 1;
+  $value: nth($args, $arg-length);
+  $value-is-map: type-of($value) == &#39;map&#39;;
+
+  @if $key-length == 0 {
+    $value: map-merge($map, if($value-is-map, $value, ($value: ())));
+  } @else {
+    @for $i from if($value-is-map, 0, 1) through $key-length {
+      $new: if($i == 0, $value, (nth($args, $arg-length - $i): $value));
+      $old: if($i == $key-length, $map, map-get-z($map, slice($args, 1, $key-length - $i)...) or ());
+      $value: if(type-of($old) == &#39;map&#39;, map-merge($old, $new), $new);
+    }
+  }
+
+  @return $value;
+ }"
+    data-collapsed="@function map-merge-z($map, $args...) { ... }"><code>@function map-merge-z($map, $args...) { ... }</code></pre>
+
+  
+    <a href="https://github.com/lunelson/sass-maps-plus/blob/master/_sass-maps-plus.scss#L143-L160" class="item__source-link" target="_blank">View source</a>
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+  <div class="item__description"><p>A <em>deep</em>, nested or chained version of <code>map-merge</code>
+that offers <code>map-set</code> syntax as well</p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$map</code></th>
+          <td data-label="desc"><p>Map</p>
+</td>
+          <td data-label="type">
+            <code>
+              
+                Map
+              
+            </code>
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$args</code></th>
+          <td data-label="desc"><p>Nested keys</p>
+</td>
+          <td data-label="type">
+            <code>
+              
+                Arglist
+              
+            </code>
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Returns</h3>
+
+  <div class="item__description">
+  
+    <code>Map</code>
+  
+   &mdash; <p>Updated map</p>
+
+  </div>
+
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+
+  
+    
+      
+      <h3 class="item__sub-heading">Requires</h3>
+      <ul class="list-unstyled">
+    
+
+    
+      <li><span class="item__cross-type">[function]</span>
+        <a href="#function-slice"><code>slice</code></a>
+        
+      </li>
+    
+  
+
+
+
+  
+    
+
+    
+      <li><span class="item__cross-type">[function]</span>
+        <a href="#function-map-get-z"><code>map-get-z</code></a>
+        
+      </li>
+    
+  
+
+
+
+
+</ul>
+
+
+  
+    
+    
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>Lu Nelson</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+
+              
+                <section class="main__item  container  item" id="function-map-inspect">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#function-map-inspect">map-inspect</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+<div class="item__code-wrapper">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@function map-inspect($map, $level) { 
+  $tab: &#39;  &#39;;
+  $cr: &#39;
+&#39;;
+
+  @if type-of($map) != &#39;map&#39; {
+    @return &#39;#{inspect($map)}&#39;;
+  }
+
+  $indent: str-multiply($tab, $level + 1);
+  $output: &#39;(&#39; + $cr + $indent; $i: 1;
+
+  @each $key, $value in $map {
+    @if type-of($value) == &#39;map&#39; {
+      $output: $output + &#39;#{$key}: #{map-inspect($value, $level+1)}&#39;;
+    } @else {
+      $output: $output + &#39;#{$key}: #{$value}&#39;;
+    }
+
+    @if $i &lt; length(map-keys($map)) {
+      $output: $output + &#39;,&#39; + $cr + $indent;
+    }
+
+    $i: $i + 1;
+  }
+
+  $outdent: str-multiply($tab, $level);
+
+  @return $output + $cr + $outdent + &#39;)&#39;;
+ }"
+    data-collapsed="@function map-inspect($map, $level) { ... }"><code>@function map-inspect($map, $level) { ... }</code></pre>
+
+  
+    <a href="https://github.com/lunelson/sass-maps-plus/blob/master/_sass-maps-plus.scss#L201-L230" class="item__source-link" target="_blank">View source</a>
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+  <div class="item__description"><p>Return a pretty-printed string representation of a map</p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$map</code></th>
+          <td data-label="desc"><p>Map to inspect</p>
+</td>
+          <td data-label="type">
+            <code>
+              
+                Map
+              
+            </code>
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$level</code></th>
+          <td data-label="desc"><p>(1) - Internal variable, <strong>do not edit</strong></p>
+</td>
+          <td data-label="type">
+            <code>
+              
+                Number
+              
+            </code>
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Returns</h3>
+
+  <div class="item__description">
+  
+    <code>String</code>
+  
+   &mdash; <p>String representation of <code>$map</code></p>
+
+  </div>
+
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+
+  
+    
+      
+      <h3 class="item__sub-heading">Requires</h3>
+      <ul class="list-unstyled">
+    
+
+    
+      <li><span class="item__cross-type">[function]</span>
+        <a href="#function-str-multiply"><code>str-multiply</code></a>
+        
+      </li>
+    
+  
+
+
+
+
+</ul>
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>Lu Nelson</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+
+              
+                <section class="main__item  container  item" id="function-map-subsort">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#function-map-subsort">map-subsort</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+    
+  
+
+
+<div class="item__code-wrapper">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@function map-subsort($map, $keys...) { 
+  @if length($keys) == 0 {
+    @return $map;
+  }
+
+  @if length($map) &gt; 1 {
+    $less: ();
+    $equal: ();
+    $greater: ();
+    $seed-map: nth(nth($map, ceil(length($map) / 2)), 2);
+    $seed-value: map-get-z($seed-map, $keys...);
+
+    @each $key, $sub-map in $map {
+      $sub-value: map-get-z($sub-map, $keys...);
+
+      @if $sub-value == $seed-value {
+        $equal: map-merge($equal, ($key: $sub-map));
+      } @else if $sub-value &lt; $seed-value {
+        @if $map-sort-dir == &#39;asc&#39; {
+          $less: map-merge($less, ($key: $sub-map));
+        } @else {
+          $greater: map-merge($greater, ($key: $sub-map));
+        }
+      } @else {
+        @if $map-sort-dir == &#39;asc&#39; {
+          $greater: map-merge($greater, ($key: $sub-map));
+        } @else {
+          $less: map-merge($less, ($key: $sub-map));
+        }
+      }
+    }
+
+    $less: map-subsort($less, $keys...);
+    $greater: map-subsort($greater, $keys...);
+
+    @return map-merge(map-merge($less, $equal), $greater);
+  }
+
+  @return $map;
+ }"
+    data-collapsed="@function map-subsort($map, $keys...) { ... }"><code>@function map-subsort($map, $keys...) { ... }</code></pre>
+
+  
+    <a href="https://github.com/lunelson/sass-maps-plus/blob/master/_sass-maps-plus.scss#L246-L285" class="item__source-link" target="_blank">View source</a>
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+  <div class="item__description"><p>Sort a map containing sub-maps, based on value at key(s) in sub-map</p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$map</code></th>
+          <td data-label="desc"><p>Map to sort</p>
+</td>
+          <td data-label="type">
+            <code>
+              
+                Map
+              
+            </code>
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$keys</code></th>
+          <td data-label="desc"><p>Keys to sort</p>
+</td>
+          <td data-label="type">
+            <code>
+              
+                Arglist
+              
+            </code>
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Returns</h3>
+
+  <div class="item__description">
+  
+    <code>Map</code>
+  
+  
+  </div>
+
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+
+  
+    
+      
+      <h3 class="item__sub-heading">Requires</h3>
+      <ul class="list-unstyled">
+    
+
+    
+      <li><span class="item__cross-type">[variable]</span>
+        <a href="#variable-map-sort-dir"><code>map-sort-dir</code></a>
+        
+      </li>
+    
+  
+
+
+
+  
+    
+
+    
+      <li><span class="item__cross-type">[function]</span>
+        <a href="#function-map-get-z"><code>map-get-z</code></a>
+        
+      </li>
+    
+  
+
+
+
+
+</ul>
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>Lu Nelson</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+
+              
+            </section>
+          
+        
+
+          
+          
+            <section class="main__sub-section" id="api-variable">
+              <h2 class="main__heading--secondary">
+                <div class="container">
+                  variables
+                </div>
+              </h2>
+
+              
+              
+                <section class="main__item  container  item" id="variable-map-sort-dir">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#variable-map-sort-dir">map-sort-dir</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+<div class="item__code-wrapper">
+  <pre class="item__code  language-scss"><code>$map-sort-dir: &#39;asc&#39;;</code></pre>
+
+  
+    <a href="https://github.com/lunelson/sass-maps-plus/blob/master/_sass-maps-plus.scss#L236-L236" class="item__source-link" target="_blank">View source</a>
+  
+</div>
+
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+  <div class="item__description"><p>Global sort direction: either <code>asc</code> or <code>desc</code></p>
+</div>
+
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+  
+
+    
+      
+      <h3 class="item__sub-heading">Used by</h3>
+      <ul class="list-unstyled">
+    
+
+    <li><span class="item__cross-type">[function]</span> <a href="#function-map-subsort"><code>map-subsort</code></a></li>
+  
+
+
+
+
+</ul>
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>Lu Nelson</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+
+              
+            </section>
+          
+        
+
+      </section>
+    
+      <section class="main__section">
+        <h1 class="main__heading" id="helpers">
+          <div class="container">
+            Helpers
+          </div>
+        </h1>
+
+        
+        
+
+          
+          
+            <section class="main__sub-section" id="helpers-function">
+              <h2 class="main__heading--secondary">
+                <div class="container">
+                  functions
+                </div>
+              </h2>
+
+              
+              
+                <section class="main__item  container  item" id="function-slice">
+
+<h3 class="item__heading">
+  
+    <span class="item__access">[private]</span>
+  
+
+  <a class="item__name" href="#function-slice">slice</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+<div class="item__code-wrapper">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@function slice($list, $start, $end, $separator) { 
+  $output: ();
+
+  @if $start &gt;= 1 and $end &gt;= $start {
+    @for $i from $start through $end {
+      $output: append($output, nth($list, $i), $separator);
+    }
+  }
+
+  @return $output;
+ }"
+    data-collapsed="@function slice($list, $start, $end, $separator) { ... }"><code>@function slice($list, $start, $end, $separator) { ... }</code></pre>
+
+  
+    <a href="https://github.com/lunelson/sass-maps-plus/blob/master/_sass-maps-plus.scss#L35-L45" class="item__source-link" target="_blank">View source</a>
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+  <div class="item__description"><p>Return a sub-list from a list, <em>sliced</em> from/to given indices</p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$list</code></th>
+          <td data-label="desc"><p>List to slice</p>
+</td>
+          <td data-label="type">
+            <code>
+              
+                List
+              
+            </code>
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$start</code></th>
+          <td data-label="desc"><p>(1) - Start index</p>
+</td>
+          <td data-label="type">
+            <code>
+              
+                Number
+              
+            </code>
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$end</code></th>
+          <td data-label="desc"><p>(length($list)) - End index</p>
+</td>
+          <td data-label="type">
+            <code>
+              
+                Number
+              
+            </code>
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$separator</code></th>
+          <td data-label="desc"><p>(list-separator($list)) - List separator</p>
+</td>
+          <td data-label="type">
+            <code>
+              
+                String
+              
+            </code>
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Returns</h3>
+
+  <div class="item__description">
+  
+    <code>List</code>
+  
+   &mdash; <p>Sliced list</p>
+
+  </div>
+
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+
+
+  
+
+    
+      
+      <h3 class="item__sub-heading">Used by</h3>
+      <ul class="list-unstyled">
+    
+
+    <li><span class="item__cross-type">[function]</span> <a href="#function-map-merge-z"><code>map-merge-z</code></a></li>
+  
+
+
+
+  
+
+    
+
+    <li><span class="item__cross-type">[function]</span> <a href="#function-list-map-merge-z"><code>list-map-merge-z</code></a></li>
+  
+
+
+
+
+</ul>
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>Lu Nelson</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+
+              
+                <section class="main__item  container  item" id="function-tuple-key">
+
+<h3 class="item__heading">
+  
+    <span class="item__access">[private]</span>
+  
+
+  <a class="item__name" href="#function-tuple-key">tuple-key</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+<div class="item__code-wrapper">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@function tuple-key($tuple) { 
+  @if length($tuple) &lt; 1 {
+    @return null;
+  }
+
+  @return nth($tuple, 1);
+ }"
+    data-collapsed="@function tuple-key($tuple) { ... }"><code>@function tuple-key($tuple) { ... }</code></pre>
+
+  
+    <a href="https://github.com/lunelson/sass-maps-plus/blob/master/_sass-maps-plus.scss#L53-L59" class="item__source-link" target="_blank">View source</a>
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+  <div class="item__description"><p>Return the key (first value) from a two-item list</p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$tuple</code></th>
+          <td data-label="desc"><p>Tuple</p>
+</td>
+          <td data-label="type">
+            <code>
+              
+                List
+              
+            </code>
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Returns</h3>
+
+  <div class="item__description">
+  
+    <code>*</code> or <code>Null</code>
+  
+   &mdash; <p>Key from <code>$tuple</code> or <code>null</code></p>
+
+  </div>
+
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+
+
+  
+
+    
+      
+      <h3 class="item__sub-heading">Used by</h3>
+      <ul class="list-unstyled">
+    
+
+    <li><span class="item__cross-type">[function]</span> <a href="#function-list-map-keys"><code>list-map-keys</code></a></li>
+  
+
+
+
+  
+
+    
+
+    <li><span class="item__cross-type">[function]</span> <a href="#function-list-map-has-key"><code>list-map-has-key</code></a></li>
+  
+
+
+
+  
+
+    
+
+    <li><span class="item__cross-type">[function]</span> <a href="#function-list-map-get"><code>list-map-get</code></a></li>
+  
+
+
+
+  
+
+    
+
+    <li><span class="item__cross-type">[function]</span> <a href="#function-list-map-merge"><code>list-map-merge</code></a></li>
+  
+
+
+
+  
+
+    
+
+    <li><span class="item__cross-type">[function]</span> <a href="#function-list-map-remove"><code>list-map-remove</code></a></li>
+  
+
+
+
+  
+
+    
+
+    <li><span class="item__cross-type">[function]</span> <a href="#function-list-map-inspect"><code>list-map-inspect</code></a></li>
+  
+
+
+
+
+</ul>
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>Lu Nelson</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+
+              
+                <section class="main__item  container  item" id="function-tuple-value">
+
+<h3 class="item__heading">
+  
+    <span class="item__access">[private]</span>
+  
+
+  <a class="item__name" href="#function-tuple-value">tuple-value</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+<div class="item__code-wrapper">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@function tuple-value($tuple) { 
+  @if length($tuple) &lt; 2 {
+    @return null;
+  }
+
+  @return nth($tuple, 2);
+ }"
+    data-collapsed="@function tuple-value($tuple) { ... }"><code>@function tuple-value($tuple) { ... }</code></pre>
+
+  
+    <a href="https://github.com/lunelson/sass-maps-plus/blob/master/_sass-maps-plus.scss#L67-L73" class="item__source-link" target="_blank">View source</a>
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+  <div class="item__description"><p>Return the value (second value) from a two-item list</p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$tuple</code></th>
+          <td data-label="desc"><p>Tuple</p>
+</td>
+          <td data-label="type">
+            <code>
+              
+                List
+              
+            </code>
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Returns</h3>
+
+  <div class="item__description">
+  
+    <code>*</code> or <code>Null</code>
+  
+   &mdash; <p>Value from <code>$tuple</code> or <code>null</code></p>
+
+  </div>
+
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+
+
+  
+
+    
+      
+      <h3 class="item__sub-heading">Used by</h3>
+      <ul class="list-unstyled">
+    
+
+    <li><span class="item__cross-type">[function]</span> <a href="#function-list-map-values"><code>list-map-values</code></a></li>
+  
+
+
+
+  
+
+    
+
+    <li><span class="item__cross-type">[function]</span> <a href="#function-list-map-get"><code>list-map-get</code></a></li>
+  
+
+
+
+  
+
+    
+
+    <li><span class="item__cross-type">[function]</span> <a href="#function-list-map-inspect"><code>list-map-inspect</code></a></li>
+  
+
+
+
+
+</ul>
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>Lu Nelson</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+
+              
+                <section class="main__item  container  item" id="function-str-multiply">
+
+<h3 class="item__heading">
+  
+    <span class="item__access">[private]</span>
+  
+
+  <a class="item__name" href="#function-str-multiply">str-multiply</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+<div class="item__code-wrapper">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@function str-multiply($string, $n) { 
+  $output: &#39;&#39;;
+
+  @if $n &gt; 0 {
+    @for $i from 1 through $n {
+      $output: $output + $string;
+    }
+  }
+
+  @return $output;
+ }"
+    data-collapsed="@function str-multiply($string, $n) { ... }"><code>@function str-multiply($string, $n) { ... }</code></pre>
+
+  
+    <a href="https://github.com/lunelson/sass-maps-plus/blob/master/_sass-maps-plus.scss#L82-L92" class="item__source-link" target="_blank">View source</a>
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+  <div class="item__description"><p>Return input <code>$string</code> printed <code>$n</code> times</p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$string</code></th>
+          <td data-label="desc"><p>String to repeat</p>
+</td>
+          <td data-label="type">
+            <code>
+              
+                String
+              
+            </code>
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$n</code></th>
+          <td data-label="desc"><p>Number of times</p>
+</td>
+          <td data-label="type">
+            <code>
+              
+                Number
+              
+            </code>
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Returns</h3>
+
+  <div class="item__description">
+  
+    <code>String</code>
+  
+  
+  </div>
+
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+
+
+  
+
+    
+      
+      <h3 class="item__sub-heading">Used by</h3>
+      <ul class="list-unstyled">
+    
+
+    <li><span class="item__cross-type">[function]</span> <a href="#function-map-inspect"><code>map-inspect</code></a></li>
+  
+
+
+
+
+</ul>
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>Lu Nelson</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+
+              
+            </section>
+          
+        
+
+      </section>
+    
+      <section class="main__section">
+        <h1 class="main__heading" id="list-map">
+          <div class="container">
+            Old List-Maps API
+          </div>
+        </h1>
+
+        
+        
+
+          
+          
+            <section class="main__sub-section" id="list-map-function">
+              <h2 class="main__heading--secondary">
+                <div class="container">
+                  functions
+                </div>
+              </h2>
+
+              
+              
+                <section class="main__item  container  item" id="function-list-map-check">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#function-list-map-check">list-map-check</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+<div class="item__code-wrapper">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@function list-map-check($list) { 
+  @if length($list) == 2 and length(nth($list, 1)) == 1 {
+    @return append((), $list, &#39;comma&#39;);
+  }
+
+  @return $list;
+ }"
+    data-collapsed="@function list-map-check($list) { ... }"><code>@function list-map-check($list) { ... }</code></pre>
+
+  
+    <a href="https://github.com/lunelson/sass-maps-plus/blob/master/_sass-maps-plus.scss#L311-L317" class="item__source-link" target="_blank">View source</a>
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+  <div class="item__description"><p>Return list-map from <code>$list</code> and ensure input list-map is list-of-lists</p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$list</code></th>
+          <td data-label="desc">&mdash;<span class="visually-hidden"> none</span></td>
+          <td data-label="type">
+            <code>
+              
+                List
+              
+            </code>
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Returns</h3>
+
+  <div class="item__description">
+  
+    <code>List-map</code>
+  
+  
+  </div>
+
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+
+
+  
+
+    
+      
+      <h3 class="item__sub-heading">Used by</h3>
+      <ul class="list-unstyled">
+    
+
+    <li><span class="item__cross-type">[function]</span> <a href="#function-list-map-keys"><code>list-map-keys</code></a></li>
+  
+
+
+
+  
+
+    
+
+    <li><span class="item__cross-type">[function]</span> <a href="#function-list-map-values"><code>list-map-values</code></a></li>
+  
+
+
+
+  
+
+    
+
+    <li><span class="item__cross-type">[function]</span> <a href="#function-list-map-has-key"><code>list-map-has-key</code></a></li>
+  
+
+
+
+  
+
+    
+
+    <li><span class="item__cross-type">[function]</span> <a href="#function-list-map-get"><code>list-map-get</code></a></li>
+  
+
+
+
+  
+
+    
+
+    <li><span class="item__cross-type">[function]</span> <a href="#function-list-map-merge"><code>list-map-merge</code></a></li>
+  
+
+
+
+  
+
+    
+
+    <li><span class="item__cross-type">[function]</span> <a href="#function-list-map-remove"><code>list-map-remove</code></a></li>
+  
+
+
+
+  
+
+    
+
+    <li><span class="item__cross-type">[function]</span> <a href="#function-list-map-merge-z"><code>list-map-merge-z</code></a></li>
+  
+
+
+
+  
+
+    
+
+    <li><span class="item__cross-type">[function]</span> <a href="#function-list-map-prev-key"><code>list-map-prev-key</code></a></li>
+  
+
+
+
+  
+
+    
+
+    <li><span class="item__cross-type">[function]</span> <a href="#function-list-map-next-key"><code>list-map-next-key</code></a></li>
+  
+
+
+
+  
+
+    
+
+    <li><span class="item__cross-type">[function]</span> <a href="#function-list-map-inspect"><code>list-map-inspect</code></a></li>
+  
+
+
+
+  
+
+    
+
+    <li><span class="item__cross-type">[function]</span> <a href="#function-list-map-pretty"><code>list-map-pretty</code></a></li>
+  
+
+
+
+  
+
+    
+
+    <li><span class="item__cross-type">[function]</span> <a href="#function-list-map-sort"><code>list-map-sort</code></a></li>
+  
+
+
+
+  
+
+    
+
+    <li><span class="item__cross-type">[function]</span> <a href="#function-list-map-json"><code>list-map-json</code></a></li>
+  
+
+
+
+
+</ul>
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>Lu Nelson</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+
+              
+                <section class="main__item  container  item" id="function-list-map-keys">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#function-list-map-keys">list-map-keys</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+    
+  
+
+  
+    
+  
+
+
+<div class="item__code-wrapper">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@function list-map-keys($list...) { 
+  $list: if(length($list) == 1, list-map-check($list...), list-map-check($list));
+  $output: ();
+
+  @each $tuple in $list {
+    $output: append($output, tuple-key($tuple), &#39;comma&#39;);
+  }
+
+  @return $output;
+ }"
+    data-collapsed="@function list-map-keys($list...) { ... }"><code>@function list-map-keys($list...) { ... }</code></pre>
+
+  
+    <a href="https://github.com/lunelson/sass-maps-plus/blob/master/_sass-maps-plus.scss#L328-L337" class="item__source-link" target="_blank">View source</a>
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+  <div class="item__description"><p>Return comma-separated list of keys from list-map
+Conformant with Ruby Sass <code>map-keys()</code></p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$list</code></th>
+          <td data-label="desc"><p>List-map</p>
+</td>
+          <td data-label="type">
+            <code>
+              
+                Arglist
+              
+            </code>
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Returns</h3>
+
+  <div class="item__description">
+  
+    <code>List</code>
+  
+  
+  </div>
+
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+
+  
+    
+      
+      <h3 class="item__sub-heading">Requires</h3>
+      <ul class="list-unstyled">
+    
+
+    
+      <li><span class="item__cross-type">[function]</span>
+        <a href="#function-list-map-check"><code>list-map-check</code></a>
+        
+      </li>
+    
+  
+
+
+
+  
+    
+
+    
+      <li><span class="item__cross-type">[function]</span>
+        <a href="#function-tuple-key"><code>tuple-key</code></a>
+        
+      </li>
+    
+  
+
+
+
+
+</ul>
+
+
+  
+    
+    
+
+
+
+  
+
+    
+      
+      <h3 class="item__sub-heading">Used by</h3>
+      <ul class="list-unstyled">
+    
+
+    <li><span class="item__cross-type">[function]</span> <a href="#function-list-map-merge"><code>list-map-merge</code></a></li>
+  
+
+
+
+  
+
+    
+
+    <li><span class="item__cross-type">[function]</span> <a href="#function-list-map-prev-key"><code>list-map-prev-key</code></a></li>
+  
+
+
+
+  
+
+    
+
+    <li><span class="item__cross-type">[function]</span> <a href="#function-list-map-next-key"><code>list-map-next-key</code></a></li>
+  
+
+
+
+  
+
+    
+
+    <li><span class="item__cross-type">[function]</span> <a href="#function-list-map-inspect"><code>list-map-inspect</code></a></li>
+  
+
+
+
+  
+
+    
+
+    <li><span class="item__cross-type">[function]</span> <a href="#function-list-map-pretty"><code>list-map-pretty</code></a></li>
+  
+
+
+
+  
+
+    
+
+    <li><span class="item__cross-type">[function]</span> <a href="#function-list-map-json"><code>list-map-json</code></a></li>
+  
+
+
+
+
+</ul>
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>Lu Nelson</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+
+              
+                <section class="main__item  container  item" id="function-list-map-values">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#function-list-map-values">list-map-values</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+    
+  
+
+  
+    
+  
+
+
+<div class="item__code-wrapper">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@function list-map-values($list...) { 
+  $list: if(length($list) == 1, list-map-check($list...), list-map-check($list));
+  $output: ();
+
+  @each $tuple in $list {
+    $output: append($output, tuple-value($tuple), &#39;comma&#39;);
+  }
+
+  @return $output;
+ }"
+    data-collapsed="@function list-map-values($list...) { ... }"><code>@function list-map-values($list...) { ... }</code></pre>
+
+  
+    <a href="https://github.com/lunelson/sass-maps-plus/blob/master/_sass-maps-plus.scss#L348-L357" class="item__source-link" target="_blank">View source</a>
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+  <div class="item__description"><p>Return comma-separated list of values from list-map
+Conformant with Ruby Sass <code>map-values()</code></p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$list</code></th>
+          <td data-label="desc"><p>List-map</p>
+</td>
+          <td data-label="type">
+            <code>
+              
+                Arglist
+              
+            </code>
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Returns</h3>
+
+  <div class="item__description">
+  
+    <code>List</code>
+  
+  
+  </div>
+
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+
+  
+    
+      
+      <h3 class="item__sub-heading">Requires</h3>
+      <ul class="list-unstyled">
+    
+
+    
+      <li><span class="item__cross-type">[function]</span>
+        <a href="#function-list-map-check"><code>list-map-check</code></a>
+        
+      </li>
+    
+  
+
+
+
+  
+    
+
+    
+      <li><span class="item__cross-type">[function]</span>
+        <a href="#function-tuple-value"><code>tuple-value</code></a>
+        
+      </li>
+    
+  
+
+
+
+
+</ul>
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>Lu Nelson</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+
+              
+                <section class="main__item  container  item" id="function-list-map-has-key">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#function-list-map-has-key">list-map-has-key</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+<div class="item__code-wrapper">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@function list-map-has-key($list, $key) { 
+  $list: list-map-check($list);
+
+  @each $tuple in $list {
+    @if tuple-key($tuple) == $key {
+      @return true;
+    }
+  }
+
+  @return false;
+ }"
+    data-collapsed="@function list-map-has-key($list, $key) { ... }"><code>@function list-map-has-key($list, $key) { ... }</code></pre>
+
+  
+    <a href="https://github.com/lunelson/sass-maps-plus/blob/master/_sass-maps-plus.scss#L369-L379" class="item__source-link" target="_blank">View source</a>
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+  <div class="item__description"><p>Check whether key exists in list-map at root level
+Conformant with Ruby Sass <code>map-has-key()</code></p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$list</code></th>
+          <td data-label="desc"><p>List-map</p>
+</td>
+          <td data-label="type">
+            <code>
+              
+                List-map
+              
+            </code>
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$key</code></th>
+          <td data-label="desc"><p>Key to check</p>
+</td>
+          <td data-label="type">
+            <code>
+              
+                Any
+              
+            </code>
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Returns</h3>
+
+  <div class="item__description">
+  
+    <code>Bool</code>
+  
+  
+  </div>
+
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+
+  
+    
+      
+      <h3 class="item__sub-heading">Requires</h3>
+      <ul class="list-unstyled">
+    
+
+    
+      <li><span class="item__cross-type">[function]</span>
+        <a href="#function-list-map-check"><code>list-map-check</code></a>
+        
+      </li>
+    
+  
+
+
+
+  
+    
+
+    
+      <li><span class="item__cross-type">[function]</span>
+        <a href="#function-tuple-key"><code>tuple-key</code></a>
+        
+      </li>
+    
+  
+
+
+
+
+</ul>
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>Lu Nelson</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+
+              
+                <section class="main__item  container  item" id="function-list-map-get">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#function-list-map-get">list-map-get</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+<div class="item__code-wrapper">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@function list-map-get($list, $key) { 
+  $list: list-map-check($list);
+
+  @each $tuple in $list {
+    @if tuple-key($tuple) == $key {
+      @return tuple-value($tuple);
+    }
+  }
+
+  @return null;
+ }"
+    data-collapsed="@function list-map-get($list, $key) { ... }"><code>@function list-map-get($list, $key) { ... }</code></pre>
+
+  
+    <a href="https://github.com/lunelson/sass-maps-plus/blob/master/_sass-maps-plus.scss#L392-L402" class="item__source-link" target="_blank">View source</a>
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+  <div class="item__description"><p>Return value corresponding to key in list-map
+Conformant with Ruby Sass <code>map-get()</code></p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$list</code></th>
+          <td data-label="desc"><p>List-map</p>
+</td>
+          <td data-label="type">
+            <code>
+              
+                List-map
+              
+            </code>
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$key</code></th>
+          <td data-label="desc"><p>Key to fetch</p>
+</td>
+          <td data-label="type">
+            <code>
+              
+                Any
+              
+            </code>
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Returns</h3>
+
+  <div class="item__description">
+  
+    Any type
+  
+   &mdash; <p>Value mapped to <code>$key</code></p>
+
+  </div>
+
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+
+  
+    
+      
+      <h3 class="item__sub-heading">Requires</h3>
+      <ul class="list-unstyled">
+    
+
+    
+      <li><span class="item__cross-type">[function]</span>
+        <a href="#function-list-map-check"><code>list-map-check</code></a>
+        
+      </li>
+    
+  
+
+
+
+  
+    
+
+    
+      <li><span class="item__cross-type">[function]</span>
+        <a href="#function-tuple-key"><code>tuple-key</code></a>
+        
+      </li>
+    
+  
+
+
+
+  
+    
+
+    
+      <li><span class="item__cross-type">[function]</span>
+        <a href="#function-tuple-value"><code>tuple-value</code></a>
+        
+      </li>
+    
+  
+
+
+
+
+</ul>
+
+
+  
+    
+    
+
+
+
+  
+
+    
+      
+      <h3 class="item__sub-heading">Used by</h3>
+      <ul class="list-unstyled">
+    
+
+    <li><span class="item__cross-type">[function]</span> <a href="#function-list-map-get-z"><code>list-map-get-z</code></a></li>
+  
+
+
+
+
+</ul>
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>Lu Nelson</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+
+              
+                <section class="main__item  container  item" id="function-list-map-merge">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#function-list-map-merge">list-map-merge</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+<div class="item__code-wrapper">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@function list-map-merge($list1, $list2) { 
+  $list1: list-map-check($list1);
+  $list2: list-map-check($list2);
+  $keys1: list-map-keys($list1);
+
+  @each $tuple in $list2 {
+    $index: index($keys1, tuple-key($tuple));
+
+    @if $index {
+      $list1: set-nth($list1, $index, $tuple);
+    } @else {
+      $list1: append($list1, $tuple, &#39;comma&#39;);
+    }
+  }
+
+  @return $list1;
+ }"
+    data-collapsed="@function list-map-merge($list1, $list2) { ... }"><code>@function list-map-merge($list1, $list2) { ... }</code></pre>
+
+  
+    <a href="https://github.com/lunelson/sass-maps-plus/blob/master/_sass-maps-plus.scss#L415-L431" class="item__source-link" target="_blank">View source</a>
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+  <div class="item__description"><p>Return a merge of second list-map in to first list-map
+Conformant with Ruby Sass <code>map-merge()</code></p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$list1</code></th>
+          <td data-label="desc"><p>First list-map</p>
+</td>
+          <td data-label="type">
+            <code>
+              
+                List-map
+              
+            </code>
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$list2</code></th>
+          <td data-label="desc"><p>Second list-map</p>
+</td>
+          <td data-label="type">
+            <code>
+              
+                List-map
+              
+            </code>
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Returns</h3>
+
+  <div class="item__description">
+  
+    <code>List-map</code>
+  
+  
+  </div>
+
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+
+  
+    
+      
+      <h3 class="item__sub-heading">Requires</h3>
+      <ul class="list-unstyled">
+    
+
+    
+      <li><span class="item__cross-type">[function]</span>
+        <a href="#function-list-map-check"><code>list-map-check</code></a>
+        
+      </li>
+    
+  
+
+
+
+  
+    
+
+    
+      <li><span class="item__cross-type">[function]</span>
+        <a href="#function-list-map-keys"><code>list-map-keys</code></a>
+        
+      </li>
+    
+  
+
+
+
+  
+    
+
+    
+      <li><span class="item__cross-type">[function]</span>
+        <a href="#function-tuple-key"><code>tuple-key</code></a>
+        
+      </li>
+    
+  
+
+
+
+
+</ul>
+
+
+  
+    
+    
+
+
+
+  
+
+    
+      
+      <h3 class="item__sub-heading">Used by</h3>
+      <ul class="list-unstyled">
+    
+
+    <li><span class="item__cross-type">[function]</span> <a href="#function-list-map-merge-z"><code>list-map-merge-z</code></a></li>
+  
+
+
+
+
+</ul>
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>Lu Nelson</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+
+              
+                <section class="main__item  container  item" id="function-list-map-remove">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#function-list-map-remove">list-map-remove</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+    
+  
+
+
+<div class="item__code-wrapper">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@function list-map-remove($list, $keys...) { 
+  $list: list-map-check($list);
+  $output: ();
+
+  @each $tuple in $list {
+    @if not index($keys, tuple-key($tuple)) {
+      $output: append($output, $tuple, &#39;comma&#39;);
+    }
+  }
+
+  @return $output;
+ }"
+    data-collapsed="@function list-map-remove($list, $keys...) { ... }"><code>@function list-map-remove($list, $keys...) { ... }</code></pre>
+
+  
+    <a href="https://github.com/lunelson/sass-maps-plus/blob/master/_sass-maps-plus.scss#L442-L453" class="item__source-link" target="_blank">View source</a>
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+  <div class="item__description"><p>Return list-map with tuples removed, according to keys (if found)</p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$list</code></th>
+          <td data-label="desc"><p>List-map</p>
+</td>
+          <td data-label="type">
+            <code>
+              
+                List-map
+              
+            </code>
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$keys</code></th>
+          <td data-label="desc"><p>Keys to remove from <code>$list</code></p>
+</td>
+          <td data-label="type">
+            <code>
+              
+                Arglist
+              
+            </code>
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Returns</h3>
+
+  <div class="item__description">
+  
+    <code>List-map</code>
+  
+  
+  </div>
+
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+
+  
+    
+      
+      <h3 class="item__sub-heading">Requires</h3>
+      <ul class="list-unstyled">
+    
+
+    
+      <li><span class="item__cross-type">[function]</span>
+        <a href="#function-list-map-check"><code>list-map-check</code></a>
+        
+      </li>
+    
+  
+
+
+
+  
+    
+
+    
+      <li><span class="item__cross-type">[function]</span>
+        <a href="#function-tuple-key"><code>tuple-key</code></a>
+        
+      </li>
+    
+  
+
+
+
+
+</ul>
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>Lu Nelson</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+
+              
+                <section class="main__item  container  item" id="function-list-map-get-z">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#function-list-map-get-z">list-map-get-z</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+    
+  
+
+
+<div class="item__code-wrapper">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@function list-map-get-z($list, $keys...) { 
+  @each $key in $keys {
+    @if type-of($list) != &#39;list&#39; {
+      @return $list;
+    }
+
+    $list: list-map-get($list, $key);
+  }
+
+  @return $list;
+ }"
+    data-collapsed="@function list-map-get-z($list, $keys...) { ... }"><code>@function list-map-get-z($list, $keys...) { ... }</code></pre>
+
+  
+    <a href="https://github.com/lunelson/sass-maps-plus/blob/master/_sass-maps-plus.scss#L463-L473" class="item__source-link" target="_blank">View source</a>
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+  <div class="item__description"><p>A <em>deep</em>, nested or chained version of <code>map-get()</code></p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$list</code></th>
+          <td data-label="desc"><p>List-map</p>
+</td>
+          <td data-label="type">
+            <code>
+              
+                List-map
+              
+            </code>
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$keys</code></th>
+          <td data-label="desc"><p>Keys to fetch</p>
+</td>
+          <td data-label="type">
+            <code>
+              
+                Arglist
+              
+            </code>
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Returns</h3>
+
+  <div class="item__description">
+  
+    Any type
+  
+  
+  </div>
+
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+
+  
+    
+      
+      <h3 class="item__sub-heading">Requires</h3>
+      <ul class="list-unstyled">
+    
+
+    
+      <li><span class="item__cross-type">[function]</span>
+        <a href="#function-list-map-get"><code>list-map-get</code></a>
+        
+      </li>
+    
+  
+
+
+
+
+</ul>
+
+
+  
+    
+    
+
+
+
+  
+
+    
+      
+      <h3 class="item__sub-heading">Used by</h3>
+      <ul class="list-unstyled">
+    
+
+    <li><span class="item__cross-type">[function]</span> <a href="#function-list-map-merge-z"><code>list-map-merge-z</code></a></li>
+  
+
+
+
+  
+
+
+
+  
+
+    
+
+    <li><span class="item__cross-type">[function]</span> <a href="#function-list-map-sort"><code>list-map-sort</code></a></li>
+  
+
+
+
+
+</ul>
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>Lu Nelson</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+
+              
+                <section class="main__item  container  item" id="function-list-map-merge-z">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#function-list-map-merge-z">list-map-merge-z</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+    
+  
+
+
+<div class="item__code-wrapper">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@function list-map-merge-z($list, $args...) { 
+  $list: list-map-check($list);
+  $arg-length: length($args);
+  $key-length: $arg-length - 1;
+  $value: nth($args, $arg-length);
+  $value-is-list: type-of($value) == &#39;list&#39;;
+
+  @if $key-length == 0 {
+    $value: list-map-merge($list, if($value-is-list, $value, append((), $value (), &#39;comma&#39;)));
+  } @else {
+    @for $i from if($value-is-list, 0, 1) through $key-length {
+      $new: if($i == 0, $value, append((), nth($args, $arg-length - $i) $value, &#39;comma&#39;));
+      $old: if($i == $key-length, $list, list-map-get-z($list, slice($args, 1, $key-length - $i)...) or ());
+      $value: if(type-of($old) == &#39;list&#39;, list-map-merge($old, $new), $new);
+    }
+  }
+
+  @return $value;
+ }"
+    data-collapsed="@function list-map-merge-z($list, $args...) { ... }"><code>@function list-map-merge-z($list, $args...) { ... }</code></pre>
+
+  
+    <a href="https://github.com/lunelson/sass-maps-plus/blob/master/_sass-maps-plus.scss#L486-L504" class="item__source-link" target="_blank">View source</a>
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+  <div class="item__description"><p>A <em>deep</em>, nested or chained version of <code>map-merge</code>; offers <code>map-set</code> syntax too</p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$list</code></th>
+          <td data-label="desc"><p>List-map</p>
+</td>
+          <td data-label="type">
+            <code>
+              
+                List-map
+              
+            </code>
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$args</code></th>
+          <td data-label="desc">&mdash;<span class="visually-hidden"> none</span></td>
+          <td data-label="type">
+            <code>
+              
+                Arglist
+              
+            </code>
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Returns</h3>
+
+  <div class="item__description">
+  
+    <code>List-map</code>
+  
+  
+  </div>
+
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+
+  
+    
+      
+      <h3 class="item__sub-heading">Requires</h3>
+      <ul class="list-unstyled">
+    
+
+    
+      <li><span class="item__cross-type">[function]</span>
+        <a href="#function-list-map-check"><code>list-map-check</code></a>
+        
+      </li>
+    
+  
+
+
+
+  
+    
+
+    
+      <li><span class="item__cross-type">[function]</span>
+        <a href="#function-list-map-merge"><code>list-map-merge</code></a>
+        
+      </li>
+    
+  
+
+
+
+  
+    
+
+    
+      <li><span class="item__cross-type">[function]</span>
+        <a href="#function-list-map-get-z"><code>list-map-get-z</code></a>
+        
+      </li>
+    
+  
+
+
+
+  
+    
+
+    
+      <li><span class="item__cross-type">[function]</span>
+        <a href="#function-slice"><code>slice</code></a>
+        
+      </li>
+    
+  
+
+
+
+
+</ul>
+
+
+  
+    
+    
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>Lu Nelson</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+
+              
+                <section class="main__item  container  item" id="function-list-map-prev-key">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#function-list-map-prev-key">list-map-prev-key</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+<div class="item__code-wrapper">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@function list-map-prev-key($list, $key) { 
+  $list: list-map-check($list);
+  $keys: list-map-keys($list);
+
+  @return nth($keys, index($keys, $key) - 1);
+ }"
+    data-collapsed="@function list-map-prev-key($list, $key) { ... }"><code>@function list-map-prev-key($list, $key) { ... }</code></pre>
+
+  
+    <a href="https://github.com/lunelson/sass-maps-plus/blob/master/_sass-maps-plus.scss#L545-L550" class="item__source-link" target="_blank">View source</a>
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+  <div class="item__description"><p>Return previous key from list-map</p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$list</code></th>
+          <td data-label="desc"><p>List-map</p>
+</td>
+          <td data-label="type">
+            <code>
+              
+                List-map
+              
+            </code>
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$key</code></th>
+          <td data-label="desc"><p>Pivot key</p>
+</td>
+          <td data-label="type">
+            <code>
+              
+                Any
+              
+            </code>
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Returns</h3>
+
+  <div class="item__description">
+  
+    Any type
+  
+  
+  </div>
+
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+
+  
+    
+      
+      <h3 class="item__sub-heading">Requires</h3>
+      <ul class="list-unstyled">
+    
+
+    
+      <li><span class="item__cross-type">[function]</span>
+        <a href="#function-list-map-check"><code>list-map-check</code></a>
+        
+      </li>
+    
+  
+
+
+
+  
+    
+
+    
+      <li><span class="item__cross-type">[function]</span>
+        <a href="#function-list-map-keys"><code>list-map-keys</code></a>
+        
+      </li>
+    
+  
+
+
+
+
+</ul>
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>Lu Nelson</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+
+              
+                <section class="main__item  container  item" id="function-list-map-next-key">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#function-list-map-next-key">list-map-next-key</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+<div class="item__code-wrapper">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@function list-map-next-key($list, $key) { 
+  $list: list-map-check($list);
+  $keys: list-map-keys($list);
+
+  @return nth($keys, index($keys, $key) + 1);
+ }"
+    data-collapsed="@function list-map-next-key($list, $key) { ... }"><code>@function list-map-next-key($list, $key) { ... }</code></pre>
+
+  
+    <a href="https://github.com/lunelson/sass-maps-plus/blob/master/_sass-maps-plus.scss#L561-L566" class="item__source-link" target="_blank">View source</a>
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+  <div class="item__description"><p>Return next key from list-map</p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$list</code></th>
+          <td data-label="desc"><p>List-map</p>
+</td>
+          <td data-label="type">
+            <code>
+              
+                List-map
+              
+            </code>
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$key</code></th>
+          <td data-label="desc"><p>Pivot key</p>
+</td>
+          <td data-label="type">
+            <code>
+              
+                Any
+              
+            </code>
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Returns</h3>
+
+  <div class="item__description">
+  
+    Any type
+  
+  
+  </div>
+
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+
+  
+    
+      
+      <h3 class="item__sub-heading">Requires</h3>
+      <ul class="list-unstyled">
+    
+
+    
+      <li><span class="item__cross-type">[function]</span>
+        <a href="#function-list-map-check"><code>list-map-check</code></a>
+        
+      </li>
+    
+  
+
+
+
+  
+    
+
+    
+      <li><span class="item__cross-type">[function]</span>
+        <a href="#function-list-map-keys"><code>list-map-keys</code></a>
+        
+      </li>
+    
+  
+
+
+
+
+</ul>
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>Lu Nelson</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+
+              
+                <section class="main__item  container  item" id="function-list-map-inspect">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#function-list-map-inspect">list-map-inspect</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+    
+  
+
+  
+    
+  
+
+
+<div class="item__code-wrapper">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@function list-map-inspect($list...) { 
+  $list: if(length($list) == 1, list-map-check($list...), list-map-check($list));
+  $output: &#39;(&#39;;
+  $i: 1;
+
+  @each $tuple in $list {
+    @if length($tuple) != 2 {
+      $output: $output + &#39;#{$tuple}&#39;;
+    } @else {
+      $key: tuple-key($tuple);
+      $value: tuple-value($tuple);
+      $output: $output + &#39;#{$key} &#39; + if(type-of($value) == &#39;list&#39;, &#39;#{list-map-inspect($value)}&#39;, &#39;#{$value}&#39;);
+    }
+
+    @if $i &lt; length(list-map-keys($list)) {
+      $output: $output + &#39;, &#39;;
+    }
+
+    $i: $i + 1;
+  }
+
+  @return $output + &#39;)&#39;;
+ }"
+    data-collapsed="@function list-map-inspect($list...) { ... }"><code>@function list-map-inspect($list...) { ... }</code></pre>
+
+  
+    <a href="https://github.com/lunelson/sass-maps-plus/blob/master/_sass-maps-plus.scss#L579-L601" class="item__source-link" target="_blank">View source</a>
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+  <div class="item__description"><p>Return the string representation of a list-map</p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$list</code></th>
+          <td data-label="desc"><p>List-map to inspect</p>
+</td>
+          <td data-label="type">
+            <code>
+              
+                Arglist
+              
+            </code>
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Returns</h3>
+
+  <div class="item__description">
+  
+    <code>String</code>
+  
+  
+  </div>
+
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+
+  
+    
+      
+      <h3 class="item__sub-heading">Requires</h3>
+      <ul class="list-unstyled">
+    
+
+    
+      <li><span class="item__cross-type">[function]</span>
+        <a href="#function-tuple-value"><code>tuple-value</code></a>
+        
+      </li>
+    
+  
+
+
+
+  
+    
+
+    
+      <li><span class="item__cross-type">[function]</span>
+        <a href="#function-list-map-check"><code>list-map-check</code></a>
+        
+      </li>
+    
+  
+
+
+
+  
+    
+
+    
+      <li><span class="item__cross-type">[function]</span>
+        <a href="#function-list-map-keys"><code>list-map-keys</code></a>
+        
+      </li>
+    
+  
+
+
+
+  
+    
+
+    
+      <li><span class="item__cross-type">[function]</span>
+        <a href="#function-tuple-key"><code>tuple-key</code></a>
+        
+      </li>
+    
+  
+
+
+
+
+</ul>
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>Lu Nelson</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+
+              
+                <section class="main__item  container  item" id="function-list-map-pretty">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#function-list-map-pretty">list-map-pretty</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+<div class="item__code-wrapper">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@function list-map-pretty($list, $level) { 
+  $tab: &#39;  &#39;;
+  $cr: &#39;
+&#39;;
+  $list: if(length($list) == 1, list-map-check($list...), list-map-check($list));
+  $indent: $tab; $outdent: $tab;
+
+  @for $n from 1 through $level {
+    $indent: $indent + $tab;
+  }
+
+  @for $n from 1 through $level - 1 {
+    $outdent: $outdent + $tab;
+  }
+
+  $output: &#39;(&#39; + $cr + $indent;
+  $i: 1;
+
+  @each $tuple in $list {
+    @if length($tuple) != 2 {
+      $output: $output + &#39;#{$tuple}&#39;;
+    } @else {
+      $key: nth($tuple, 1); $value: nth($tuple, 2);
+      @if type-of($value) == &#39;list&#39; {
+        $output: $output + &#39;#{$key} #{list-map-pretty($value, $level+1)}&#39;;
+      } @else {
+        $output: $output + &#39;#{$key} #{$value}&#39;;
+      }
+    }
+
+    @if $i &lt; length(list-map-keys($list)) {
+      $output: $output + &#39;,&#39; + $cr + $indent;
+    }
+
+    $i: $i + 1;
+  }
+
+  @return $output + $cr + $outdent + &#39;)&#39;;
+ }"
+    data-collapsed="@function list-map-pretty($list, $level) { ... }"><code>@function list-map-pretty($list, $level) { ... }</code></pre>
+
+  
+    <a href="https://github.com/lunelson/sass-maps-plus/blob/master/_sass-maps-plus.scss#L611-L649" class="item__source-link" target="_blank">View source</a>
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+  <div class="item__description"><p>Return the string representation of a list-map with indents and line breaks</p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$list</code></th>
+          <td data-label="desc"><p>List-map to inspect</p>
+</td>
+          <td data-label="type">
+            <code>
+              
+                List-map
+              
+            </code>
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$level</code></th>
+          <td data-label="desc"><p>(1) - Internal variable, <strong>do not edit</strong></p>
+</td>
+          <td data-label="type">
+            <code>
+              
+                Number
+              
+            </code>
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+
+  
+    
+      
+      <h3 class="item__sub-heading">Requires</h3>
+      <ul class="list-unstyled">
+    
+
+    
+      <li><span class="item__cross-type">[function]</span>
+        <a href="#function-list-map-check"><code>list-map-check</code></a>
+        
+      </li>
+    
+  
+
+
+
+  
+    
+
+    
+      <li><span class="item__cross-type">[function]</span>
+        <a href="#function-list-map-keys"><code>list-map-keys</code></a>
+        
+      </li>
+    
+  
+
+
+
+
+</ul>
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>Lu Nelson</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+
+              
+                <section class="main__item  container  item" id="function-list-map-sort">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#function-list-map-sort">list-map-sort</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+    
+  
+
+
+<div class="item__code-wrapper">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@function list-map-sort($list-map, $keys...) { 
+  @if length($keys) &lt; 1 {
+    @return $list-map;
+  }
+
+  $list-map: list-map-check($list-map);
+
+  @if length($list-map) &gt; 1 {
+    $less: ();
+    $equal: ();
+    $greater: ();
+    $seed: nth($list-map, ceil(length($list-map) / 2));
+    $seed-value: list-map-get-z(nth($seed, 2), $keys...);
+
+    @each $item in $list-map {
+      $item-value: list-map-get-z(nth($item, 2), $keys...);
+
+      @if $list-map-sort-dir == &#39;asc&#39; {
+        @if $item-value == $seed-value {
+          $equal: append($equal, $item, &#39;comma&#39;);
+        } @else if $item-value &lt; $seed-value {
+          $less: append($less, $item, &#39;comma&#39;);
+        } @else {
+          $greater: append($greater, $item, &#39;comma&#39;);
+        }
+      } @else {
+        @if $item-value == $seed-value {
+          $equal: append($equal, $item, &#39;comma&#39;);
+        } @else if $item-value &gt; $seed-value {
+          $less: append($less, $item, &#39;comma&#39;);
+        } @else {
+          $greater: append($greater, $item, &#39;comma&#39;);
+        }
+      }
+    }
+
+    @return join(join(map-sort($less, $keys...), $equal), list-map-sort($greater, $keys...));
+  }
+
+  @return $list-map;
+ }"
+    data-collapsed="@function list-map-sort($list-map, $keys...) { ... }"><code>@function list-map-sort($list-map, $keys...) { ... }</code></pre>
+
+  
+    <a href="https://github.com/lunelson/sass-maps-plus/blob/master/_sass-maps-plus.scss#L666-L706" class="item__source-link" target="_blank">View source</a>
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+  <div class="item__description"><p>Return sorted list-map, based on values at given key(s)</p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$list-map</code></th>
+          <td data-label="desc"><p>List-map to sort</p>
+</td>
+          <td data-label="type">
+            <code>
+              
+                List-map
+              
+            </code>
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$keys</code></th>
+          <td data-label="desc"><p>Keys to use for sorting</p>
+</td>
+          <td data-label="type">
+            <code>
+              
+                Arglist
+              
+            </code>
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Returns</h3>
+
+  <div class="item__description">
+  
+    <code>List-map</code>
+  
+  
+  </div>
+
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+
+  
+    
+      
+      <h3 class="item__sub-heading">Requires</h3>
+      <ul class="list-unstyled">
+    
+
+    
+      <li><span class="item__cross-type">[variable]</span>
+        <a href="#variable-list-map-sort-dir"><code>list-map-sort-dir</code></a>
+        
+      </li>
+    
+  
+
+
+
+  
+    
+
+    
+      <li><span class="item__cross-type">[function]</span>
+        <a href="#function-list-map-check"><code>list-map-check</code></a>
+        
+      </li>
+    
+  
+
+
+
+  
+    
+
+    
+      <li><span class="item__cross-type">[function]</span>
+        <a href="#function-list-map-get-z"><code>list-map-get-z</code></a>
+        
+      </li>
+    
+  
+
+
+
+
+</ul>
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>Lu Nelson</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+
+              
+                <section class="main__item  container  item" id="function-list-map-json">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#function-list-map-json">list-map-json</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+    
+  
+
+  
+    
+  
+
+
+<div class="item__code-wrapper">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@function list-map-json($list...) { 
+  $list: if(length($list) == 1, list-map-check($list...), list-map-check($list));
+  $output: &#39;{ &#39;;
+  $i: 1;
+
+  @each $tuple in $list {
+    @if length($tuple) != 2 {
+      $output: $output + &#39;#{$tuple}&#39;;
+    } @else {
+      $key: nth($tuple, 1);
+      $value: nth($tuple, 2);
+
+      @if type-of($value) == &#39;list&#39; {
+        $output: $output + &#39;&quot;#{$key}&quot;: #{list-map-json($value)}&#39;;
+      } @else if type-of($value) == &#39;number&#39; {
+        $value: if(unitless($value), $value, &#39;&quot;#{$value}&quot;&#39;);
+        $output: $output + &#39;&quot;#{$key}&quot;: #{$value}&#39;;
+      } @else {
+        $value: if(type-of($value) == &#39;bool&#39;, $value, &#39;&quot;#{$value}&quot;&#39;);
+        $output: $output + &#39;&quot;#{$key}&quot;: #{$value}&#39;;
+      }
+    }
+
+    @if $i &lt; length(list-map-keys($list)) {
+      $output: $output + &#39;, &#39;;
+    }
+
+    $i: $i + 1;
+  }
+
+  @return $output + &#39; }&#39;;
+ }"
+    data-collapsed="@function list-map-json($list...) { ... }"><code>@function list-map-json($list...) { ... }</code></pre>
+
+  
+    <a href="https://github.com/lunelson/sass-maps-plus/blob/master/_sass-maps-plus.scss#L716-L747" class="item__source-link" target="_blank">View source</a>
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+  <div class="item__description"><p>Return JSON string representation of a list-map</p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$list</code></th>
+          <td data-label="desc"><p>List-map</p>
+</td>
+          <td data-label="type">
+            <code>
+              
+                Arglist
+              
+            </code>
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Returns</h3>
+
+  <div class="item__description">
+  
+    <code>String</code>
+  
+   &mdash; <p>JSON string</p>
+
+  </div>
+
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+
+  
+    
+      
+      <h3 class="item__sub-heading">Requires</h3>
+      <ul class="list-unstyled">
+    
+
+    
+      <li><span class="item__cross-type">[function]</span>
+        <a href="#function-list-map-check"><code>list-map-check</code></a>
+        
+      </li>
+    
+  
+
+
+
+  
+    
+
+    
+      <li><span class="item__cross-type">[function]</span>
+        <a href="#function-list-map-keys"><code>list-map-keys</code></a>
+        
+      </li>
+    
+  
+
+
+
+
+</ul>
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>Lu Nelson</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+
+              
+            </section>
+          
+        
+
+          
+          
+            <section class="main__sub-section" id="list-map-variable">
+              <h2 class="main__heading--secondary">
+                <div class="container">
+                  variables
+                </div>
+              </h2>
+
+              
+              
+                <section class="main__item  container  item" id="variable-list-map-sort-dir">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#variable-list-map-sort-dir">list-map-sort-dir</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+<div class="item__code-wrapper">
+  <pre class="item__code  language-scss"><code>$list-map-sort-dir: &#39;asc&#39;;</code></pre>
+
+  
+    <a href="https://github.com/lunelson/sass-maps-plus/blob/master/_sass-maps-plus.scss#L655-L655" class="item__source-link" target="_blank">View source</a>
+  
+</div>
+
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+  <div class="item__description"><p>Global sort direction: either <code>asc</code> or <code>desc</code></p>
+</div>
+
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+  
+
+    
+      
+      <h3 class="item__sub-heading">Used by</h3>
+      <ul class="list-unstyled">
+    
+
+    <li><span class="item__cross-type">[function]</span> <a href="#function-list-map-sort"><code>list-map-sort</code></a></li>
+  
+
+
+
+
+</ul>
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>Lu Nelson</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+
+              
+            </section>
+          
+        
+
+      </section>
+    
+
+  
+
+
+
+    
+    
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      
+        <div class="footer__project-info  project-info">
+          <!-- Name and URL -->
+          
+            <a class="project-info__name" href="https://github.com/lunelson/sass-maps-plus">Sass Maps Plus</a>
+          
+
+          <!-- Version -->
+          <span class="project-info__version"> - v0.9.5</span>
+
+          <!-- License -->
+          
+          <span class="project-info__license">, under
+            
+              MIT
+            
+            </span>
+          
+        </div>
+      
+
+      
+        <span class="footer__watermark">Built with <a href="https://github.com/SassDoc/sassdoc">SassDoc</a>.</span>
+      
+    </div>
+  </footer>
+
+
+  </article>
+
+
+  
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
+
+
+<script src="./assets/js/main.min.js"></script>
+
+</body>
+</html>
